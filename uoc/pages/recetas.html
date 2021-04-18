@@ -1,0 +1,110 @@
+<!-- Página web desarrollada por Daniel Sariego Alvarez, UOC 2021-->
+  
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Meta para optimizar la visualización en móviles -->
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+	  <title>Golden Apple Restaurant</title>
+    <meta name="description" content="">
+    <link rel="icon" href="../img/goldenApple.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" /> 
+  </head>
+  <body>
+    <!-- Library JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     
+    <header id="begin" class="menu">            
+        <div class="brand">
+            <a href="../index.html"><img src="../img/Golden_Apple.png" alt="" width="60"></a>
+            <a href="../index.html"><h1><span>GOLDEN</span><span>Apple</span></h1></a>
+        </div>
+        <div id="navApp">
+            <nav class="navbar"> 
+                <ul>
+                    <li><a href="restaurante.html" class="active"><span class="apple"></span>El restaurante</a></li>
+                    <li><a href="recetas.html"><span class="arrow"></span>Las recetas</a></li>
+                    <li><a href="enlaces.html"><span class="apple"></span>Enlaces</a></li>
+                    <li><a href=""><span class="apple"></span>Club</a></li>
+                </ul>
+            </nav>
+        </div>  
+        <div class="hiddenDiv" id="hidDiv"></div>    
+    </header>
+ 
+    <main id="main" class="home">
+        <div class="container">
+
+            <section id="lasrecetas">
+                <h2 class="textCenter"><span class="restaurantText">LAS<span class="restaurantText2">RECETAS</span></span></h2>
+                <div class="envelope">
+                    <img src="../img/img_/tablebook.jpg" alt="Nuestri libo de recetas">
+                </div>
+                <p class="subTitle textCenter">Bienvenido a nuestro dispensario de recetas, nuestras comidas favoritas que queremos hacerle llegar a usted. Todas ellas están hechas con los recursos que encontramos a nuestro alrededor, por lo que las encontraras sin problemas tras unas sesiones de exploración. A continuación, tiene un listado de todos los ingredientes que forman parte de nuestras recetas (las de comer).</p>
+                <div id="itemsMC" class="itemsMC"></div>
+            </section>
+
+            <section id="menudeldia">
+                <div class="menudeldia">
+                    <div>
+                        <h2 class="textCenter"><span class="restaurantText">PLATO<span class="restaurantText2">DEL</span>DIA</span></h2>            
+                        <div class="envelope2 fillborder">
+                            <div>
+                                <h3>ESTOFADO DE CONEJO</h3>
+                                <p>El estofado de conejo es un alimento muy nutritivo. Está elaborado a base de conejo cocinado, zanahoria, patata cocinada y champiñón, además del cuenco que hace de recipiente reutilizable.</p>
+                                <p><a href="recetaEstofadoConejo.html">[ Ver la receta]</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+                        <h2 class="textCenter"><span class="restaurantText">ESPECIA<span class="restaurantText2">LIDADES</span></span></h2>
+                        <div class="envelope2 fillborder">
+                            <div>
+                                <h3>Cordero cocinado</h3>
+                                <h2>.................</h2>
+                                <h3>Estofado de Champiñones</h3>
+                                <h2>.................</h2>
+                                <h3>Tarta de Calabaza</h3>
+                                <h2>.................</h2>
+                                <h3>Manzana dorada</h3>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+            </section>
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="containerFluid">
+            <div class="footer">
+                <ul>
+                    <li><a href="">Sobre nosotros</a></li>    
+                    <li><a href="">Aviso legal</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Craftbook</a></li>
+                    <li><a href="">Minetter</a></li>
+                    <li><a href="">YouCraft</a></li>
+                </ul>
+            </div>
+            <p>&copy; 2021 Daniel Sariego Alvarez</p>
+            <p>Iconos <a href="https://genfavicon.com/es/">genfavicon.com</a></p>
+            <p>Imágenes <a href="https://minecraftbedrock-archive.fandom.com/wiki/Minecraft_Bedrock_Wiki">fandom.com</a></p>
+            <div class="goTop">
+                <a href="#begin">&xwedge;</a>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- Access to load script -->
+    <script src="../app.js"></script>
+   
+      
+  </body>
+</html> 
