@@ -693,7 +693,7 @@ footer a:hover {
 #listItems ul, #listRecomended ul {
     display: grid;
     grid-gap: 2vw;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     font-size: 1.4em;
     list-style: none;
 }
