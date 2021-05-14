@@ -1,0 +1,169 @@
+<!-- Página web desarrollada por Daniel Sariego Alvarez, UOC 2021-->
+  
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Meta para optimizar la visualización en móviles -->
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+	  <title>Golden Apple Restaurante</title>
+    <meta name="description" content="">
+    <link rel="icon" href="img/goldenApple.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" /> 
+  </head>
+  <body>
+    <!-- Library JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     
+    <header id="begin" class="menu">            
+        <div class="brand">
+            <a href="index.html"><img src="img/logoApple.svg" alt="Logo Golden Apple" class="logoApple">
+            <h1 class="logoApple"><span>GOLDEN</span><span>Apple</span></h1></a>
+        </div>
+        <div id="navApp">
+            <nav class="navbar"> 
+                <ul>
+                    <li><a href="pages/restaurante.html"><span class="apple"></span>El restaurante</a></li>
+                    <li><a href="pages/recetas.html"><span class="apple"></span>Las recetas</a></li>
+                    <li><a href="pages/enlaces.html"><span class="apple"></span>Enlaces</a></li>
+                    <li><a href=""><span class="apple"></span>Club</a></li>
+                </ul>
+            </nav>
+        </div>  
+        <div class="hiddenDiv" id="hidDiv"></div>    
+    </header>
+ 
+    <main id="main" class="home">
+        <div class="container">
+
+            <section>
+                <h2 class="textCenter">Bienvenidos al restaurante<br /><span class="restaurantText">GOLDEN<span class="restaurantText2">APPLE</span></span></h2>
+                <div class="envelope parentImg">
+                    <div class="bk_effBub">
+                        <div class="effectBubbles">
+                            <picture>
+                                <!-- <source srcset="img/img_/da/09_450.png" media="(min-width: 0px) and (max-width: 449px)">
+                                <source srcset="img/img_/da/09_600.png" media="(min-width: 450px) and (max-width: 599px)">
+                                <source srcset="img/img_/da/09_800.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                <source srcset="img/img_/da/09_1200.png" media="(min-width: 768)">    -->
+                                <img src="img/img_/09.png"
+                                    srcset="img/img_/png/09_450.png 450w,
+                                            img/img_/png/09_600.png 600w,
+                                            img/img_/png/09_800.png 800w,
+                                            img/img_/png/09_1200.png 1200w"
+                                    sizes="(min-width: 1024px) 50vw, 95vw "
+                                    alt="Bienvenidos a Golden Apple, conoce nuestro restaurante">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="childImgIndex">
+                        <img src="img/img_/pers300rev.png">
+                    </div>
+                    <!-- <img src="img/img_/png/09_1200.png" alt="Bienvenidos a Golden Apple y su entorno"><div class="prew0"></div> -->
+                </div>
+                <p class="subTitle textCenter"><em>GoldenApple</em> es el restaurante que hará las delicias de todo aldeano de la comarca de <em>Roca Mineral</em>. Nos encontramos en el pequeño pueblo de la <em>Campana Dorada</em>, donde la materia prima es de primera calidad, y la maestría del crafteo de nuestros Chef's hará lo demás: nuestra comida es toda una experiencia, mucho mejor que ver explotar por los aires a un Creeper.</p>       
+            </section>
+
+            <section>
+                <h2 class="textCenter"><span class="restaurantText">ATREVETE<span class="restaurantText2">A</span>ENTRAR</span></h2>
+                <div class="flexContainer">
+                    <a href="pages/restaurante.html#vistazo"><div class="howTo prew1">
+                        <!-- <img src="img/howto-register.png" alt="" class="imgFluid"> -->
+                        <p>Echa un vistazo</p>
+                    </div></a>
+                    <a href="pages/restaurante.html#interior"><div class="howTo prew2">
+                        <p>Entra en el local</p>
+                    </div></a>
+                    <a href="pages/restaurante.html#receta"><div class="howTo prew3">
+                        <p>Elige tu receta</p>
+                    </div></a>
+                    <a href="pages/restaurante.html#saborea"><div class="howTo prew4">
+                        <p>Saborea el manjar</p>
+                    </div></a>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="textCenter"><span class="restaurantText">UNETE<span class="restaurantText2">AL</span>CLUB</span></h2>
+                <div class="flexContainer2">
+                    <p class="h2 lemaHome">¿Te gusta cazar zombies y curar aldeanos? Pues seguro que pasas por nuestro restaurante con cierta regularidad... Esta es tu casa.<br />¿Por que no unirte a nuestra familia?</p>
+                    <div class="form">
+                        <form action="#" method="POST">
+                            <ul>
+                                <li>
+                                    <label for="nom" class="sr">Nombre</label>
+                                    <input type="text" id="nom" name="nom" value="" placeholder="Nombre" required>
+                                </li>
+                                <li>
+                                    <label for="correo" class="sr">Correo electrónico</label>
+                                    <input type="email" id="correo" name="email" value="" placeholder="Correo electrónico" required>
+                                </li>
+                                <li>
+                                    <label for="contrasenya" class="sr">Contraseña</label>
+                                    <input type="password" id="contrasenya" name="password" value="" placeholder="Contraseña" required>
+                                </li>
+                            </ul>
+
+                            <div class="outFieldset">
+                                <p class="infoLegal">INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <b>GOLDEN APPLE</b>. <b>Finalidades</b>: para hacer una manzana dorada, deberá tener ocho lingotes de oro y una manzana. <b>Legitimación</b>: Consentimiento del interesado. <b>Destinatarios:</b> Aldeanos que esten enfermos por una mordida Zombie. <b>Derechos</b>: una vez consumida y curada la enfermedad del aldeano, podrá comerciar con una posición un tanto ventajosa. <b>Información Adicional</b>: Tenga cuidado de no ser mordido usted al buscar el oro. Vea el <a href="">Aviso Legal</a> y la <a href="">Política de privacidad</a>.</p>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="politica" id="politica" value="Aceptacion de política y aviso" required >
+                                        <label for="politica">He leído y acepto la política de privacidad</label>
+                                    </li>
+                                </ul>
+                                <input type="submit" value="Registrarse">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="containerFluid">
+            <div class="socialNetwork">
+                <ul>
+                    <li><a href="">Sobre nosotros</a></li>    
+                    <li><a href="">Aviso legal</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Craftbook</a></li>
+                    <li><a href="">Minetter</a></li>
+                    <li><a href="">YouCraft</a></li>
+                </ul>
+            </div>
+            <div class="navFooter">
+                <div class="menuFooter">
+                    <ul>
+                        <li><a href="pages/restaurante.html">El restaurante</a></li>
+                        <li><a href="pages/recetas.html">Las recetas</a></li>
+                        <li><a href="pages/enlaces.html">Enlaces</a></li>
+                        <li><a href="">Club</a></li>
+                    </ul>
+                    <div class="brand">
+                        <a href="index.html" class="footerLink">
+                            <img src="img/logoApple.svg" alt="Logo Golden Apple" class="logoApple">
+                            <h1 class="logoApple"><span>GOLDEN</span><span>Apple</span></h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p>&copy; 2021 Daniel Sariego Alvarez</p>
+                    <p>Iconos <a href="https://genfavicon.com/es/">genfavicon.com</a></p>
+                    <p>Imágenes <a href="https://minecraftbedrock-archive.fandom.com/wiki/Minecraft_Bedrock_Wiki">fandom.com</a></p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- Access to load script -->
+    <script src="app.js" type="module"></script>
+   
+      
+  </body>
+</html> 

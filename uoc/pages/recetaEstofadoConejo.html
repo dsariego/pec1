@@ -1,0 +1,145 @@
+<!-- Página web desarrollada por Daniel Sariego Alvarez, UOC 2021-->
+  
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Meta para optimizar la visualización en móviles -->
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+	  <title>Golden Apple - Receta Estofado de Conejo</title>
+    <meta name="description" content="">
+    <link rel="icon" href="../img/goldenApple.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" /> 
+  </head>
+  <body>
+    <!-- Library JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     
+    <header id="begin" class="menu">            
+        <div class="brand">
+            <a href="../index.html"><img src="../img/logoApple.svg" alt="Logo Golden Apple" class="logoApple">
+            <h1 class="logoApple"><span>GOLDEN</span><span>Apple</span></h1></a>
+        </div>
+        <div id="navApp">
+            <nav class="navbar"> 
+                <ul>
+                    <li><a href="restaurante.html"><span class="apple"></span>El restaurante</a></li>
+                    <li><a href="recetas.html"><span class="apple"></span>Las recetas</a></li>
+                    <li><a href="enlaces.html"><span class="apple"></span>Enlaces</a></li>
+                    <li><a href=""><span class="apple"></span>Club</a></li>
+                </ul>
+            </nav>
+        </div>  
+        <div class="hiddenDiv" id="hidDiv"></div>    
+    </header>
+ 
+    <main id="main" class="home">
+        <div class="container">
+            <section id="lasrecetas">
+                <div class="menudeldia receta">
+                    <div>
+                        <h2 class="textCenter"><span class="restaurantText">ESTOFADO<span class="restaurantText2">DE</span>CONEJO</span></h2>
+                        <div class="envelope2">
+                            <div class="bk_notice">
+                                <div class="recipePicture">
+                                    <picture>
+                                        <source srcset="../img/img_/da/stewRabbit_450_tran.png" media="(min-width: 0px) and (max-width: 449px)">
+                                        <source srcset="../img/img_/da/stewRabbit_600_tran.png" media="(min-width: 450px) and (max-width: 599px)">
+                                        <source srcset="../img/img_/da/stewRabbit_800_tran.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                        <source srcset="../img/img_/da/stewRabbit_1000_tran.png" media="(min-width: 768)">                       
+                                        <img src="../img/img_/da/stewRabbit_1000_tran.png" alt="Nuestra estupensa receta de estofado de Conejo, buen apetito">
+                                    </picture>
+                                </div>
+                                <p class="subTitle">El estofado de conejo se puede comer, y cada tazón restaura la salud de cualquier aventurero con una baja salud, y satisfaciendo las ganas de comer por un plazo largo. Esto restaura más hambre que cualquier otro tipo de alimentos en el juego, excepto la tarta pero menos saturación que una zanahoria dorada.</p>
+                            </div>  
+                        </div>
+                    </div>
+                    <div>
+                        <div class="envelope2 fillborder extends ">
+                            <div class="bk_notice">
+                                <h2 class="ingr">INGREDIENTES</h2>
+                                <p>Reune los siguientes componentes para tener tu rico estofado listo para consumir:</p>
+                                <div id="listIngr"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section id="cocinandoEstCon">
+                <div class="envelope2 fillborder">
+                    <div class="bk_notice parentImg">
+                        <h2 class="ingr">PREPARACIÓN</h2>
+                        <p>Al igual que con el estofado o guiso de champiñones, comer estofado de conejo vacía el cuenco, pero el sonido reproducido es el de "comiendo" crujiente en lugar del sonido de "beber" sorbiendo.</p>
+                        <p class="subTitle textCenter">Para esta receta es necesario tener cocinado previamente un conejo, ya sea a fuego de leña o carbón. Cogemos unas zanahorias de nuestro inventario, unas patatas, y a todo ello le agregamos algún tipo de champiñon, para aportar un toque de sabor. Lo mezclamos todo en un olla con agua, y lo dejamos cocinar todo durante una hora a fuego lento. Retiramos la comida y la introducimos en un cuenco, preferiblemente de madera de pino. Ahora ya solo queda disfrutar de su sabor.</p>
+                        <p><em lang='fr'>¡Bon Appetit!</em>.</p>
+                        <div class="childImgLf">
+                            <img src="../img/img_/recetario.png">
+                        </div>    
+                    </div>  
+                    
+                </div>
+            </section>
+
+            <section id="recomendacion">
+                <div class="envelope2 fillborder parentImg">
+                    <div class="bk_notice">
+                        <h2 class="ingr">RECOMENDACIONES</h2>
+                        <div id="listRec"></div>
+                    </div>
+                    <div class="childImgRh">
+                        <img src="../img/img_/pers400rev.png">
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="containerFluid">
+            <div class="socialNetwork">
+                <ul>
+                    <li><a href="">Sobre nosotros</a></li>    
+                    <li><a href="">Aviso legal</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Craftbook</a></li>
+                    <li><a href="">Minetter</a></li>
+                    <li><a href="">YouCraft</a></li>
+                </ul>
+            </div>
+            <div class="navFooter">
+                <div class="menuFooter">
+                    <ul>
+                        <li><a href="restaurante.html">El restaurante</a></li>
+                        <li><a href="recetas.html">Las recetas</a></li>
+                        <li><a href="enlaces.html">Enlaces</a></li>
+                        <li><a href="">Club</a></li>
+                    </ul>
+                    <div class="brand">
+                        <a href="../index.html" class="footerLink">
+                            <img src="../img/logoApple.svg" alt="Logo Golden Apple" class="logoApple">
+                            <h1 class="logoApple"><span>GOLDEN</span><span>Apple</span></h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p>&copy; 2021 Daniel Sariego Alvarez</p>
+                    <p>Iconos <a href="https://genfavicon.com/es/">genfavicon.com</a></p>
+                    <p>Imágenes <a href="https://minecraftbedrock-archive.fandom.com/wiki/Minecraft_Bedrock_Wiki">fandom.com</a></p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- Access to load script -->
+    <script src="../app.js"></script>
+   
+      
+  </body>
+</html> 

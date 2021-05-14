@@ -1,0 +1,236 @@
+<!-- Página web desarrollada por Daniel Sariego Alvarez, UOC 2021-->
+  
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <!-- Meta para optimizar la visualización en móviles -->
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+	  <title>Golden Apple - El Restaurante</title>
+    <meta name="description" content="">
+    <link rel="icon" href="/goldenApple.98f1f2ed.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/styles.b61e60ae.css"> 
+  </head>
+  <body>
+    <!-- Library JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     
+    <header id="begin" class="menu">            
+        <div class="brand">
+            <a href="/index.html"><img src="/logoApple.74cb1718.svg" alt="Logo Golden Apple" class="logoApple">
+            <h1 class="logoApple"><span>GOLDEN</span><span>Apple</span></h1></a>
+        </div>
+        <div id="navApp">
+            <nav class="navbar"> 
+                <ul>
+                    <li><a href="/pages/restaurante.html" class="active"><span class="arrow"></span>El restaurante</a></li>
+                    <li><a href="/pages/recetas.html"><span class="apple"></span>Las recetas</a></li>
+                    <li><a href="/pages/enlaces.html"><span class="apple"></span>Enlaces</a></li>
+                    <li><a href=""><span class="apple"></span>Club</a></li>
+                </ul>
+            </nav>
+        </div>  
+        <div class="hiddenDiv" id="hidDiv"></div>    
+    </header>
+ 
+    <main id="main" class="home">
+        <div class="container">
+
+            <section id="vistazo">
+                <h2 class="textCenter"><span class="restaurantText">ECHA<span class="restaurantText2">UN</span>VISTAZO</span></h2>
+                <div class="envelope">
+                    <video controls="">
+                        <source src="/ext_406_low.a85c89e5.mp4" type="video/mp4" media="(max-width: 767px)">
+                        <source src="/ext_720_low.160e8caf.mp4" type="video/mp4" media="(min-width: 768px)">
+                        <img src="/09_1200.9d8e7c04.png" alt="Video no soportado">
+                        Tu navegador no soporta HTML5 Video
+                    </video>
+                </div>
+                <p class="subTitle textCenter">Roca Mineral es un extenso valle que goza de multitud de recursos naturales. Emplazado en una zona de montaña y bosque, los propios accidentes geográficos proporcionan a los aldeanos de esta zona una protección ejemplar cuando cae la noche. Y bien conocido de esta comarca es el precioso pueblo de Campana Dorada, un emplazamiento de unos 150 monigotes donde su principal fuente de riqueza es la minería y la ganadería. Pero, sobre todo, la gente de este lugar es conocida por su templanza e iniciativa hacia las aventuras, aquí no conocerá aldeano transformado en zombie ni Creeper estallando por los aires.</p>
+                <p class="subTitle textCenter">De esta genial mezcla surge una iniciativa, y tal ha sido su éxito, que hoy en día Campana Dorada es el lugar al que acude cualquiera que quiera un remedio para combatir las mordeduras o para llenar el gaznate. Se trata del restaurante GoldenApple, un lugar de encuentro para iniciar las mayores aventuras, para conocer a gente estupenda, para curarte y conocer los conjuros más insólitos, pero, sobre todo, un lugar donde podrás craftear todo tipo de consumible. Aquí no te faltará ningún ingrediente para tus recetas.</p>
+            </section>
+
+            <section id="interior">
+                <h2 class="textCenter"><span class="restaurantText">VISITA<span class="restaurantText2">EL</span>INTERIOR</span></h2>
+                <div class="envelope">
+                    <video controls="">
+                        <source src="/int_406_low.080d94da.mp4" type="video/mp4" media="(max-width: 720px)">
+                        <source src="/int_720_low.7fe590ca.mp4" type="video/mp4" media="(min-width: 721px)">
+                        <img src="/21_1200.4a7c41ad.png" alt="Video no soportado">
+                        Tu navegador no soporta HTML5 Video
+                    </video>
+                </div>
+                <p class="subTitle textCenter"><em>GoldenApple</em> es el restaurante que hará las delicias de todo aldeano de la comarca de <em>Roca Mineral</em>. Nos encontramos en el pequeño pueblo de la <em>Campana Dorada</em>, donde la materia prima es de primera calidad, y la maestría del crafteo de nuestros Chef's hará lo demás: nuestra comida es toda una experiencia, mucho mejor que ver explotar por los aires a un Creeper.</p>
+            </section>
+
+            <section id="receta">
+                <h2 class="textCenter"><span class="restaurantText">ELIGE<span class="restaurantText2">LA</span>RECETA</span></h2>
+                <div class="envelope">
+                    <div class="slider">
+                        <ul>
+                            <li>
+                                <picture>
+                                    <source srcset="/09.48460392.png" media="print">
+                                    <source srcset="/09_450.7b21796e.png" media="(min-width: 0px) and (max-width: 449px)">
+                                    <source srcset="/09_600.306e53fc.png" media="(min-width: 450px) and (max-width: 599px)">
+                                    <source srcset="/09_800.8bc25403.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                    <source srcset="/09_1200.9d8e7c04.png" media="(min-width: 768)">                       
+                                    <img src="/09_1200.9d8e7c04.png" alt="Foto fachada GoldenApple 1">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source srcset="/03.55819f38.png" media="print">
+                                    <source srcset="/03_450.7d42d410.png" media="(min-width: 0px) and (max-width: 449px)">
+                                    <source srcset="/03_600.d159979f.png" media="(min-width: 450px) and (max-width: 599px)">
+                                    <source srcset="/03_800.f30c8766.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                    <source srcset="/03_1200.aa0bcd2c.png" media="(min-width: 768)">                       
+                                    <img src="/03_1200.aa0bcd2c.png" alt="Foto entrada GoldenApple 1">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source srcset="/15.ddb9ba23.png" media="print">
+                                    <source srcset="/15_450.fcdbbfd8.png" media="(min-width: 0px) and (max-width: 449px)">
+                                    <source srcset="/15_600.b23d9d1d.png" media="(min-width: 450px) and (max-width: 599px)">
+                                    <source srcset="/15_800.10e46108.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                    <source srcset="/15_1200.36e94acb.png" media="(min-width: 768)">                       
+                                    <img src="/15_1200.36e94acb.png" alt="Foto cocina GoldenApple 1">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source srcset="/20.c146be77.png" media="print">
+                                    <source srcset="/20_450.28212e97.png" media="(min-width: 0px) and (max-width: 449px)">
+                                    <source srcset="/20_600.5e19b71e.png" media="(min-width: 450px) and (max-width: 599px)">
+                                    <source srcset="/20_800.e1c65207.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                    <source srcset="/20_1200.179180a8.png" media="(min-width: 768)">                       
+                                    <img src="/20_1200.179180a8.png" alt="Foto cocina GoldenApple 2">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source srcset="/18.cbe8c572.png" media="print">
+                                    <source srcset="/18_450.cd806621.png" media="(min-width: 0px) and (max-width: 449px)">
+                                    <source srcset="/18_600.4a607a55.png" media="(min-width: 450px) and (max-width: 599px)">
+                                    <source srcset="/18_800.e98446c2.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                    <source srcset="/18_1200.32b72f00.png" media="(min-width: 768)">                       
+                                    <img src="/18_1200.32b72f00.png" alt="Foto cocina GoldenApple 3">
+                                </picture>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="subTitle textCenter"><em>GoldenApple</em> es el restaurante que hará las delicias de todo aldeano de la comarca de <em>Roca Mineral</em>. Nos encontramos en el pequeño pueblo de la <em>Campana Dorada</em>, donde la materia prima es de primera calidad, y la maestría del crafteo de nuestros Chef's hará lo demás: nuestra comida es toda una experiencia, mucho mejor que ver explotar por los aires a un Creeper.</p>
+            </section>
+
+            <section id="saborea">
+                <h2 class="textCenter rotate"><span class="restaurantText">SABOREA<span class="restaurantText2">EL</span>MANJAR</span></h2>
+                <div class="envelope">
+                    <div class="slider">
+                        <ul>
+                            <li>
+                                <picture>
+                                    <source srcset="/13.56c09962.png" media="print">
+                                    <source srcset="/13_450.f3653984.png" media="(min-width: 0px) and (max-width: 449px)">
+                                    <source srcset="/13_600.29df4ca8.png" media="(min-width: 450px) and (max-width: 599px)">
+                                    <source srcset="/13_800.8cecbd0d.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                    <source srcset="/13_1200.c6c19839.png" media="(min-width: 768)">                       
+                                    <img src="/13_1200.c6c19839.png" alt="Foto interior GoldenApple 1">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source srcset="/23.30cc0238.png" media="print">
+                                    <source srcset="/23_450.27782359.png" media="(min-width: 0px) and (max-width: 449px)">
+                                    <source srcset="/23_600.42ff0e79.png" media="(min-width: 450px) and (max-width: 599px)">
+                                    <source srcset="/23_800.90931482.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                    <source srcset="/23_1200.6f890fbc.png" media="(min-width: 768)">                       
+                                    <img src="/23_1200.6f890fbc.png" alt="Foto interior y mesas GoldenApple 1">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source srcset="/27.ad929294.png" media="print">
+                                    <source srcset="/27_450.3861f409.png" media="(min-width: 0px) and (max-width: 449px)">
+                                    <source srcset="/27_600.c356dabf.png" media="(min-width: 450px) and (max-width: 599px)">
+                                    <source srcset="/27_800.07f6eeba.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                    <source srcset="/27_1200.afec98ee.png" media="(min-width: 768)">                       
+                                    <img src="/27_1200.afec98ee.png" alt="Foto interior y mesas GoldenApple 2">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source srcset="/14.a3dc2257.png" media="print">
+                                    <source srcset="/14_450.c0b30291.png" media="(min-width: 0px) and (max-width: 449px)">
+                                    <source srcset="/14_600.331f9404.png" media="(min-width: 450px) and (max-width: 599px)">
+                                    <source srcset="/14_800.6d06e3fb.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                    <source srcset="/14_1200.da393a0a.png" media="(min-width: 768)">                       
+                                    <img src="/14_1200.da393a0a.png" alt="Foto mesas GoldenApple 1">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source srcset="/29_450.2b778e38.png" media="(min-width: 0px) and (max-width: 449px)">
+                                    <source srcset="/29_600.43ecbc54.png" media="(min-width: 450px) and (max-width: 599px)">
+                                    <source srcset="/29_800.74d4edcb.png" media="(min-width: 600px) and (max-width: 767px)"> 
+                                    <source srcset="/29_1200.99e9641f.png" media="(min-width: 768)">                       
+                                    <img src="/29_1200.99e9641f.png" alt="Foto mesas GoldenApple 1">
+                                </picture>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="subTitle textCenter">Roca Mineral es un extenso valle que goza de multitud de recursos naturales. Emplazado en una zona de montaña y bosque, los propios accidentes geográficos proporcionan a los aldeanos de esta zona una protección ejemplar cuando cae la noche. Y bien conocido de esta comarca es el precioso pueblo de Campana Dorada, un emplazamiento de unos 150 monigotes donde su principal fuente de riqueza es la minería y la ganadería. Pero, sobre todo, la gente de este lugar es conocida por su templanza e iniciativa hacia las aventuras, aquí no conocerá aldeano transformado en zombie ni Creeper estallando por los aires.</p>
+        <p class="subTitle textCenter">De esta genial mezcla surge una iniciativa, y tal ha sido su éxito, que hoy en día Campana Dorada es el lugar al que acude cualquiera que quiera un remedio para combatir las mordeduras o para llenar el gaznate. Se trata del restaurante GoldenApple, un lugar de encuentro para iniciar las mayores aventuras, para conocer a gente estupenda, para curarte y conocer los conjuros más insólitos, pero, sobre todo, un lugar donde podrás craftear todo tipo de consumible. Aquí no te faltará ningún ingrediente para tus recetas.</p>
+            </section>
+            
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="containerFluid">
+            <div class="socialNetwork">
+                <ul>
+                    <li><a href="">Sobre nosotros</a></li>    
+                    <li><a href="">Aviso legal</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Craftbook</a></li>
+                    <li><a href="">Minetter</a></li>
+                    <li><a href="">YouCraft</a></li>
+                </ul>
+            </div>
+            <div class="navFooter">
+                <div class="menuFooter">
+                    <ul>
+                        <li><a href="/pages/restaurante.html">El restaurante</a></li>
+                        <li><a href="/pages/recetas.html">Las recetas</a></li>
+                        <li><a href="/pages/enlaces.html">Enlaces</a></li>
+                        <li><a href="">Club</a></li>
+                    </ul>
+                    <div class="brand">
+                        <a href="/index.html" class="footerLink">
+                            <img src="/logoApple.74cb1718.svg" alt="Logo Golden Apple" class="logoApple">
+                            <h1 class="logoApple"><span>GOLDEN</span><span>Apple</span></h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p>&copy; 2021 Daniel Sariego Alvarez</p>
+                    <p>Iconos <a href="https://genfavicon.com/es/">genfavicon.com</a></p>
+                    <p>Imágenes <a href="https://minecraftbedrock-archive.fandom.com/wiki/Minecraft_Bedrock_Wiki">fandom.com</a></p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- Access to load script -->
+    <script src="/app.c328ef1a.js"></script>
+   
+      
+  </body>
+</html> 
