@@ -824,22 +824,6 @@ footer .brand img {
     width: 15em;
 }
 
-/*.effectCircle {
-  height: 100%;
-  width: auto;
-  clip-path: ellipse(45% 45% at 50% 48%);
-  -webkit-clip-path: ellipse(45% 45% at 50% 48%);
-}
-
-.effectBubbles {
-    clip-path: ellipse(42% 42% at 43% 48%);
-    transform: rotate(3deg);
-} */
-
-.bk_effBub {    
-    background-color: rgba(125,80,0,1);
-}
-
 .childImgIndex {
     position: absolute;
     bottom: -8%;
