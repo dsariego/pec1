@@ -841,4 +841,8 @@ footer .brand img {
     right: 0;
     transform: rotate(-5deg);
 }
+.effectCircle {
+    clip-path: ellipse(47% 47% at 51% 48%);
+}
+
 
