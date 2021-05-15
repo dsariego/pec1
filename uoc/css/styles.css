@@ -248,7 +248,6 @@ section {
 h2.textCenter {
     transform:rotate(-4deg);  
     margin-left: -.2em;
-    z-index: 1;
     position: relative;
 }
 
