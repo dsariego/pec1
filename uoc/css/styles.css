@@ -743,7 +743,7 @@ footer .brand img {
 /* RECETAS */
 
 #listItems, #listIngredients, #listRecomended {
-    margin-left: 2em;
+    margin-left: 0em;
     font-size: 1.5em;
 }
 
