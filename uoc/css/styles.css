@@ -744,12 +744,12 @@ footer .brand img {
 
 #listItems, #listIngredients, #listRecomended {
     margin-left: 0em;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #listItems ul, #listRecomended ul {
     display: grid;
-    grid-gap: 2vw;
+    grid-gap: 1vw;
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 1.4em;
     list-style: none;
@@ -776,7 +776,7 @@ footer .brand img {
                 #000 0, #000 37.5%,
                 transparent 0, transparent 50%)
                 0 / 5em 5em;
-    margin: -2.5em 1em 4em 1em; 
+    margin: -2em 1em 4em 1em; 
     /*min-height: 150px;*/
 }
 
