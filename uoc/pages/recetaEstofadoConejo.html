@@ -12,8 +12,6 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css" /> 
   </head>
   <body>
-    <!-- Library JQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
      
     <header id="begin" class="menu">            
         <div class="brand">
@@ -42,13 +40,12 @@
                         <div class="envelope2">
                             <div class="bk_notice">
                                 <div class="recipePicture">
-                                    <picture>
-                                        <source srcset="../img/img_/da/stewRabbit_450_tran.png" media="(min-width: 0px) and (max-width: 449px)">
-                                        <source srcset="../img/img_/da/stewRabbit_600_tran.png" media="(min-width: 450px) and (max-width: 599px)">
-                                        <source srcset="../img/img_/da/stewRabbit_800_tran.png" media="(min-width: 600px) and (max-width: 767px)"> 
-                                        <source srcset="../img/img_/da/stewRabbit_1000_tran.png" media="(min-width: 768)">                       
-                                        <img src="../img/img_/da/stewRabbit_1000_tran.png" alt="Nuestra estupensa receta de estofado de Conejo, buen apetito">
-                                    </picture>
+                                    <img 
+                                        srcset="../img/img_/da/stewRabbit_450_tran.png 1x,
+                                            ../img/img_/da/stewRabbit_600_tran.png 1.5x,
+                                            ../img/img_/da/stewRabbit_800_tran.png 2x,
+                                            ../img/img_/da/stewRabbit_1000_tran.png 3x"           
+                                        src="../img/img_/da/stewRabbit_1000_tran.png" alt="Nuestra estupensa receta de estofado de Conejo, buen apetito">                   
                                 </div>
                                 <p class="subTitle">El estofado de conejo se puede comer, y cada tazón restaura la salud de cualquier aventurero con una baja salud, y satisfaciendo las ganas de comer por un plazo largo. Esto restaura más hambre que cualquier otro tipo de alimentos en el juego, excepto la tarta pero menos saturación que una zanahoria dorada.</p>
                             </div>  
@@ -75,7 +72,7 @@
                         <p class="subTitle textCenter">Para esta receta es necesario tener cocinado previamente un conejo, ya sea a fuego de leña o carbón. Cogemos unas zanahorias de nuestro inventario, unas patatas, y a todo ello le agregamos algún tipo de champiñon, para aportar un toque de sabor. Lo mezclamos todo en un olla con agua, y lo dejamos cocinar todo durante una hora a fuego lento. Retiramos la comida y la introducimos en un cuenco, preferiblemente de madera de pino. Ahora ya solo queda disfrutar de su sabor.</p>
                         <p><em lang='fr'>¡Bon Appetit!</em>.</p>
                         <div class="childImgLf">
-                            <img src="../img/img_/recetario.png">
+                            <img src="../img/img_/recetario.png" alt="El recetario de la semana">
                         </div>    
                     </div>  
                     
@@ -89,7 +86,7 @@
                         <div id="listRec"></div>
                     </div>
                     <div class="childImgRh">
-                        <img src="../img/img_/pers400rev.png">
+                        <img src="../img/img_/pers400rev.png" alt="El aldeano te recomienda">
                     </div>
                 </div>
             </section>
