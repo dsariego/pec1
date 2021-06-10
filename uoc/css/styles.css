@@ -27,6 +27,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
+    min-width:360px;
 }
 
 h1, h2, h3, h4 {
@@ -246,7 +247,7 @@ section {
 }
 
 h2.textCenter {
-    transform:rotate(-4deg);  
+    /*transform:rotate(-4deg);  */
     margin-left: -.2em;
     position: relative;
 }
@@ -273,7 +274,7 @@ h2.textCenter {
                 0 / 5em 5em;
     margin: -2.5em 0 2em;
     max-width:1200px;
-    min-height: 200px;  
+    /*min-height: 200px;  */
     transition: all .5s ease;
 }
 
@@ -282,7 +283,7 @@ h2.textCenter {
     padding: 0;
     width: 100%;
     height: 45vw;
-    min-height: 200px;
+    /*min-height: 200px;*/
     max-height:460px;
     background-color: rgb(125,85,0);
     background-image: url("../img/img_/09.png");
@@ -294,7 +295,7 @@ h2.textCenter {
 .howTo {
     width: 90%;
     height: 25vw;
-    min-height: 180px;
+    /*min-height: 180px;*/
     max-height:260px;
     background-color: rgb(125,85,0);
     overflow:hidden;
@@ -577,6 +578,9 @@ footer .brand img {
     footer {
         text-align: left;
     }
+    h2.textCenter {
+        transform:rotate(-4deg);
+    }
     .containerFluid {
         display: grid;
         grid-gap: 1vw;
@@ -773,7 +777,7 @@ footer .brand img {
                 transparent 0, transparent 50%)
                 0 / 5em 5em;
     margin: -2.5em 1em 4em 1em; 
-    min-height: 150px;
+    /*min-height: 150px;*/
 }
 
 .envelope2 div {
