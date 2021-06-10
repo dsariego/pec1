@@ -27,7 +27,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    min-width:360px;
+    min-width:380px;
 }
 
 h1, h2, h3, h4 {
@@ -825,7 +825,8 @@ footer .brand img {
     position: absolute;
     bottom:-1em;
     right: -3em;
-    width: 15em;
+    width: 20vw;
+    min-width: 120px;
 }
 
 .childImgIndex {
