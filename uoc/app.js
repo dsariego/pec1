@@ -1,9 +1,4 @@
 import "./js/dom.js";
-import { myFunction } from "./js/menu.js";
-import { ifLaziloading } from "./js/imgLoading";
+import "./js/menu.js";
+import "./js/imgLoading.js";
 
-/* MENÚ FLOTANTE Y ANEXADO A LA CABECERA */
-window.onscroll = function() { 
-    myFunction();
-    ifLaziloading();
-  };

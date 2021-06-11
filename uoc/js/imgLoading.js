@@ -1,5 +1,7 @@
+ifLaziloading();
+  
 /* Incorporación dinámica de la biblioteca externa loading en claso de incompatibilidad de navegador */
-export default function() {
+function ifLaziloading() {
     if ('loading' in HTMLImageElement.prototype) {
     const images = document.querySelectorAll("img.lazyload");
     images.forEach(img => {
