@@ -1,15 +1,9 @@
-/* MENÚ FLOTANTE Y ANEXADO A LA CABECERA */
-window.onscroll = function() { 
-  myFunction();
-};
+export default function() {
+  var header = document.getElementById("navApp");
+  var main = document.getElementById("main");
+  var hidden = document.getElementById("hidDiv");
+  var sticky = header.offsetTop;
 
-var header = document.getElementById("navApp");
-var main = document.getElementById("main");
-var hidden = document.getElementById("hidDiv");
-var sticky = header.offsetTop;
-
-
-function myFunction() {
   if ( window.pageYOffset > sticky ) {
     hidden.classList.add("positionFixed2");
     header.classList.add("sticky");
