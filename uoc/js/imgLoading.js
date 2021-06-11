@@ -7,7 +7,7 @@ export default function() {
       });
     } else {
     // Importamos la libreria `lazysizes`
-    const lazySizesLib = await import('/lazysizes.min.js');
+    const lazySizesLib = import('/lazysizes.min.js');
     // Se inicia lazysizes
     lazySizes.init(); 
     }
