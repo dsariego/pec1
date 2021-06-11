@@ -7,8 +7,9 @@ export default function() {
       });
     } else {
     // Importamos la libreria `lazysizes`
-    const lazySizesLib = import('/lazysizes.min.js');
-    // Se inicia lazysizes
-    lazySizes.init(); 
+    let script = document.createElement("script");
+    script.async = true;
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js";
+    document.body.appendChild(script);
     }
   }
