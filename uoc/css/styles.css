@@ -553,7 +553,10 @@ footer .brand img {
 	100% {margin-left: -400%;}
 } 
 
-
+.lazyLoad {
+    width:100%;
+    height:auto;
+}
 /* BREAKPOINTS - Media Queries */
 
 /* Móviles en horizontal y tablets en vertical */
