@@ -1,17 +1,24 @@
-ifLaziloading();
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazyLoad"));
   
-/* Incorporación dinámica de la biblioteca externa loading en claso de incompatibilidad de navegador */
-function ifLaziloading() {
-    if ('loading' in HTMLImageElement.prototype) {
-    const images = document.querySelectorAll("img.lazyload");
-    images.forEach(img => {
-        img.src = img.dataset.src;
+    // Inspeccionamos tolos los elementos img con class lazyLoad
+    if ("IntersectionObserver" in window) {
+      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            let lazyImage = entry.target;
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.srcset = lazyImage.dataset.srcset;
+            lazyImage.classList.remove("lazyLoad");
+            lazyImageObserver.unobserve(lazyImage);
+          }
+        });
+      });
+  
+      lazyImages.forEach(function(lazyImage) {
+        lazyImageObserver.observe(lazyImage);
       });
     } else {
-    // Importamos la libreria `lazysizes`
-    let script = document.createElement("script");
-    script.async = true;
-    script.src = "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js";
-    document.body.appendChild(script);
+      console.log("Possibly fall back to event handlers here");
     }
-  }
+  });
