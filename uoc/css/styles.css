@@ -5,9 +5,8 @@
     font-style: normal;
     font-weight: 400;
     src: local('Minecraft'), url('https://fonts.cdnfonts.com/s/36662/MinecraftTen-VGORe.woff') format('woff');
+    font-display: swap;
 } 
-
-
 
 /* Mobile First Design */
 /* ESTILOS GENERALES */
@@ -222,8 +221,11 @@ nav.navbar a.active {
 
 .logoApple {
     display: inline;
+    width: 100%;
 }
-
+ picture {
+     width: 100%;
+ }
 
 /* Cuerpo principal - MAIN */
 
