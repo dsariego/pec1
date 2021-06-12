@@ -225,7 +225,7 @@ nav.navbar a.active {
     height: auto;
 }
 
-picture {
+picture, img {
     width: 100%;
     height: auto;
 }
@@ -321,16 +321,16 @@ h2.textCenter {
 }
 
 .prew1 {
-    background-image: url("../img/img_/da/04_500350.png");
+    background-image: url("../img/img_/webp/04_500350.webp");
 }
 .prew2 {
-    background-image: url("../img/img_/da/11_500350.png");
+    background-image: url("../img/img_/webp/11_500350.webp");
 }
 .prew3 {
-    background-image: url("../img/img_/da/18_500350.png");
+    background-image: url("../img/img_/webp/18_500350.png");
 }
 .prew4 {
-    background-image: url("../img/img_/da/27_500350.png");
+    background-image: url("../img/img_/webp/27_500350.webp");
 }
 
 .howTo p {
@@ -512,8 +512,6 @@ footer .brand img {
 .copy p {
     margin-bottom: -1em;
 }
-
-
 
 
 /* DISEÑO SLIDER FOTOS 
